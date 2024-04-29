@@ -15,9 +15,16 @@
     // we can also used double and single coutes inside the backticks 
     let user1="uday the full web stack developer";
     document.write(`Hello "${user1}"`);
-    
-    
-    
+    // we can also used the template string or template literals in functions also
+   let firstname="uday";//declaring the variable for storing the firstname
+   let lastname="bisht";//declaring the variable for storing the lastname
+   //make the function for getting the full name and passes varible as argument
+   function getfullname(firstname,lastname){
+    return `${firstname}${lastname}`;
+   } 
+    let result=`hello ${getfullname(firstname,lastname)}`;
+    document.write(result);
+
     </script>
 </body>
 </html>
