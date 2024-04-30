@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arrow function in javascript</title>
+</head>
+
+<body>
+    <script>
+//this is oldest way of declaring a function before the es6 version of javascript
+// if we have a single line of code inside a function we don,t want to give the curle brackets.
+        let welcome = function () {
+            return `welcome to the arrow function in javascript`
+        }
+        document.write(welcome());
+    //now we in es6 we have a new way to make the function in less code known as arrow function in js.
+    //syntax
+    //in this way we create a arrow function having code of one line so we can,t want curly braces.
+    let welcome1 = () =>`hello`
+    console.log(welcome1());
+    //here we can pass the multiple argument in arrow function in js
+let addition = (a,b) =>{
+    return a+b;
+}
+
+console.log(`the sum of a and b is ${addition(2,5)}`);
+    
+    </script>
+</body>
+
+</html>
