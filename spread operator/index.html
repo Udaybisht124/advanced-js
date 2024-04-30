@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SPREAD OPERATOR</title>
+</head>
+<body>
+    <script>
+//Spread opeator working are similiar to rest operator when we want to pass the array of elements during function calling
+function student_info_display(name,course,...args){//...args is a rest operator in js used to merge the multiple argument in a array
+   let sum=0;
+   document.write(`Hlo bro ${name} of ${course}your total marks is`);
+   for(let i in args)
+    {
+        sum+=args[i];
+        
+    }
+    return sum;
+} 
+let arr=[10,20,30];
+//...arr here we use the spread opeator in js 
+//spread operator and rest operator are opposite are same rest used in argument passing while spread used in function calling.
+let output = student_info_display("uday singh bisht","bca",...arr,"<br>");
+document.write(output);
+
+let result = student_info_display("rohit singla","bca",...arr);
+
+document.write(result);
+    </script>
+</body>
+</html>

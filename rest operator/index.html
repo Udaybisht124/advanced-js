@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>REST OPERATOR</title>
+</head>
+<body>
+    <script>
+//we can use the rest operator in js when we want to pass the different types of mupltiple arguement in function as a argument and performing some operation
+// function without rest operator
+//we can use the arguments function so that it make the array object of argument passes to it
+// function student_info_display(a,b,c ){
+//    let sum=0;
+//     for(let i in arguments)
+//     {
+//         sum+=arguments[i];
+//     }
+//     return sum;
+// } 
+
+// let result = student_info_display(10,20,30);
+// document.write(result);
+//now if we want to pass the different type of value to function as first arguments then js will give rest operator which was come in es6.
+function student_info_display(name,course,...args){//...args is a rest operator in js used to merge the multiple argument in a array
+   let sum=0;
+   document.write(`hlo${name} of ${course}your total marks is`);
+   for(let i in args)
+    {
+        sum+=args[i];
+        
+    }
+    return sum;
+} 
+
+let output = student_info_display("uday singh bisht","bca",10,20,30);
+document.write(output);
+let result = student_info_display("rohit singla","bca",10,20,30);
+
+document.write(result);
+    </script>
+</body>
+</html>
