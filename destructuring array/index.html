@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=
+    , initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+</style>
+<body>
+    <script>
+// console.log("Learn distructuring array in advanced js we can use these for storing the array value in variable");
+
+console.log("without using distructing array in advanced js");
+// let user=["uday singh bisht",25];
+// let name = user[0];
+// let age =user[1];
+// console.log(name);
+// console.log(age);
+
+
+
+//using distructuring array
+
+// let user1=["uday singh bisht",20];
+// let[name1,age1]=user1;
+// console.log(name1);
+// console.log(age1);
+
+// if we don,t pass the value in array and print the unknowm variable which is accessing the index value it return undefined
+//if we pass the value of age = 22 than if we give the default value of age then it can overwrite 
+
+
+// let user1=["uday singh bisht",50];
+//we can set the default value of variable
+
+// let[name1,age1=20]=user1;
+// console.log(name1);
+// console.log(age1);
+
+//distructuring array in also used in nested array in js
+
+// let user2=["uday",23,["chandigarh","male"]];
+
+//store the array value in variable
+
+// let[name3,age3,[city,gender]]=user2;
+// console.log(name3);
+// console.log(age3);
+// console.log(city);
+// console.log(gender);
+// using the destructing array with rest operator
+let user4=["uday singh bisht",24,"chandigarh","stream"];
+let[name4,...args]=user4;
+console.log(name4);
+console.log(args);
+
+
+// we can also used the destructing array with function in advances js
+function user([name,age]){
+    console.log(name);
+    console.log(age);
+}
+user(["uday",23]);
+function user1(){
+    return ["rohand das",25];
+}
+let[name9,age9]=user1();
+console.log(name9);
+console.log(age9);
+    </script>
+</body>
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //fetching the data from the json file and converted into json file using async and await function 
+        //async function is used to run the function in background and await we write on those code if we want to do wait of code of execution
+    //  async function fetchdata(){
+    //     const respose = await fetch("data.json");
+    //     const data = await respose.json();
+    //     return data;
+    //  }
+    //  fetchdata().then((message)=>{
+    //     console.log(message);
+    //  }).catch(error)
+    //     console.log(error);
+    
+//we can use the code in try catch block if we call the display function multiple time we don,t want to write the catch just like above code multiple times
+ async function display1(){
+try{
+    const fetchdata = await fetch("data.json");
+    const data1 = await fetchdata.json();
+    return data1;
+
+}
+catch(error){
+    console.log(error);
+}}
+
+display1().then((message)=>{
+console.log(message);
+})
+    </script>
+</body>
+</html>

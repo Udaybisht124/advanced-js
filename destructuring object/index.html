@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        console.log("using destructuring object in js");
+        let student ={
+            name:"udaysinghbisht",
+            age:23,
+            city:"chandigarh",
+            course:"bca",
+        }
+        // here we can store the properites of an student in a variable and accessing that variable
+    //propeties name and variable should be same in destructuring object
+
+        // let{name,age,city,course}=student;
+        // console.log(name);
+        // console.log(age);
+        // console.log(city);
+        // console.log(course);
+
+        //we can also used the rest operator in destructing array in js
+
+        // let{name,...args}=student;
+        // console.log(name);
+        // console.log(args);
+        // // we can also used the alias of variable
+
+        let{name:studentname,age:a,city:c,course:co}=student;
+        console.log(studentname);
+        console.log(a);
+console.log(c);
+console.log(co);        
+
+    </script>
+</body>
+</html>

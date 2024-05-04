@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Object literals</title>
+</head>
+<body>
+    <script>
+        //we can use object literal for returning the object in function
+//          let fname="uday";
+//         let lname="bisht";
+//         let course=bca;
+//         function showdata(fname,lname,course){
+// let fullname=fname+" "+lname;
+// return {fullname,course};
+//   }
+//   let s = showdata(fname,lname,course);
+//   console.log(s.fullname);
+//   console.log(s.course);
+//in ec6 version of js if we have properties name and value of this properties get by any variable whose name is also name name then we write only one time in object below the example will given
+// //here we don,t use the concept of ec6
+// let name="rohit";
+// let course="bca";
+// let obj={
+//     name:name,
+// course:course,
+// }
+// console.log(obj);
+//here we use the concept of ec6
+
+// let fname="rohit";
+// let lname="singla";
+// let obj1={
+//     fname,
+// lname,
+// }
+// console.log(obj1);
+
+
+
+//in object literal second example we can use variable name as property name in  object
+    //we can also concatenate the two string in  which one is variabl and another is a string
+//     [n +"name"]:"uday bisht",
+//     [c]:"bca"
+// }
+// console.log(obj2.studentname);
+// console.log(obj2.course);
+//EXAMPLE OF OBJECT LITERALS IN JS
+// we can also used the name of function as properties name
+// let a = "student";
+// let obj6={
+//     [a+"name"]:"uday singh bisht",
+//     course:"btech",
+//     detail:function(){
+//         return `${this.studentname} is a student of ${this.course} final year 2024`;
+//     }
+
+// }
+// console.log(obj6);
+// console.log(obj6.detail());
+
+//In ecmascript 6 of js we have a new  syntax of defining a function inside an js object and calling syntax has also changed
+let student={
+    name:"uday singh bisht",
+    course:"btech",
+    'detail show'(){
+        return `${this.name} is a student of ${this.course} final year`;
+    }
+}
+//we have also another syntax of calling the function which is decalred inside the object 
+
+console.log(student['detail show']());
+
+
+
+ </script>
+</body>
+</html>
